@@ -26,6 +26,8 @@ namespace Scraper
         {
             Console.WriteLine("Scrapping com HtmlAgilityPack!");
             Console.WriteLine("Funciona bem quando o site retorna os dados no html logo de cara.");
+            Console.WriteLine("O pacote Fizzler.Systems.HtmlAgilityPack é um exelente adicional para poder usar css selectors.");
+            Console.WriteLine(@"Ficaria algo assim: doc.DocumentNode.QuerySelector("".rates-count"")");
             var web = new HtmlWeb();
             var doc = web.Load(@"https://example.com/");
             var titulo = doc.DocumentNode.SelectNodes(@"/html/body/div/h1")[0];
